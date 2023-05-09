@@ -1,0 +1,53 @@
+@import "../../style/mixins";
+
+.container {
+  background-color: var(--background-dark);
+  padding: 100px 0;
+
+  .innerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1280px;
+
+    .title {
+      text-align: center;
+      @include font(36px,700,48px);
+
+      @include respond-to(768px) {
+        @include font(28px,700,38px);
+      }
+    }
+
+    .subtitle {
+      margin-top: 20px;
+      text-align: center;
+      @include font(20px,400,28px);
+
+      @include respond-to(1024px) {
+        @include font(16px,400,24px);
+      }
+    }
+  }
+
+  .services {
+    margin: 60px auto;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @include respond-to(1320px) {
+      padding: 0 20px;
+      margin-top: 40px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @include respond-to(768px) {
+
+    }
+  }
+}

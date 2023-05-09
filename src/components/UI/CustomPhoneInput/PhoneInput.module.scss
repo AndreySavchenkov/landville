@@ -1,0 +1,21 @@
+.containerClass {
+  background-color: rgba(255, 255, 255, 0.01) !important;
+}
+
+.inputClass {
+  height: 44px !important;
+  width: 100% !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: none !important;
+  color: #FFFFFF !important;
+}
+
+.buttonClass {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: none !important;
+
+  &:hover, &:active {
+    background-color: var(--background-main) !important;
+  }
+}
+

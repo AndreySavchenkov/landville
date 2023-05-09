@@ -1,0 +1,33 @@
+.button {
+  padding: 14px 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: var(--white);
+  background-color: var(--primary-hover);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  &:hover{
+    background-color: var(--primary);
+  }
+
+  &:active {
+    background-color: var(--primary-active);
+  }
+
+  &_medium {
+    padding: 10px 24px;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  &_fullWidth {
+    width: 100%;
+  }
+}

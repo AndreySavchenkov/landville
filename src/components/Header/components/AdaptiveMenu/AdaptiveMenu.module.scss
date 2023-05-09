@@ -1,0 +1,33 @@
+@import "../../../../style/mixins";
+
+.adaptiveMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  width: 462px;
+  height: calc(100vh - 160px);
+  padding: 80px 20px;
+  background-color: var(--background-main);
+
+  @include respond-to(768px){
+    width: calc(100% - 20px);
+    height: calc(100vh - 80px);
+    padding: 60px 10px 20px;
+  }
+
+  &_closeIcon {
+    top: 26px;
+    right: 40px;
+    position: absolute;
+    cursor: pointer;
+
+    @include respond-to(768px){
+      top: 16px;
+      right: 20px;
+    }
+  }
+
+}

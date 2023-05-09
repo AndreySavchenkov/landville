@@ -1,0 +1,29 @@
+@import "../../style/mixins";
+
+.root {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--border);
+ background-color: var(--background-main);
+  z-index: 999;
+
+  .menu {
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &_iconMenu {
+      cursor: pointer;
+    }
+
+    .innerContainer {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+  }
+}

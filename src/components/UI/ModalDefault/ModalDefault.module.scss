@@ -1,0 +1,33 @@
+@import "../../../style/mixins";
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-main);
+  min-width: 540px;
+
+  @include respond-to(768px) {
+    min-width: 100%;
+  }
+
+  .header {
+    &_title {
+      padding: 24px 0;
+      text-align: center;
+      @include font(24px,700,36px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    &_closeIcon {
+      top: 16px;
+      right: 12px;
+      position: absolute;
+      cursor: pointer;
+
+      @include respond-to(768px){
+        top: 20px;
+        right: 20px;
+      }
+    }
+  }
+}
